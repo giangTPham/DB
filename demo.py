@@ -34,6 +34,7 @@ def main():
     args = parser.parse_args()
     args = vars(args)
     args = {k: v for k, v in args.items() if v is not None}
+    print(args)
 
     conf = Config()
     experiment_args = conf.compile(conf.load(args['exp']))['Experiment']
