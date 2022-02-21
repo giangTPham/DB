@@ -143,7 +143,6 @@ class Demo:
 
             if visualize and self.structure.visualizer:
                 vis_image = self.structure.visualizer.demo_visualize(image_path, output)
-                print(output)
                 cv2.imwrite(os.path.join(self.args['result_dir'], image_path.split('/')[-1].split('.')[0]+'.jpg'), vis_image)
 
 if __name__ == '__main__':
